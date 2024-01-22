@@ -33,7 +33,10 @@
       rel="stylesheet"
     />
     <!-- font awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <style>
       .font-manrope {
         font-family: "Manrope";
@@ -42,7 +45,8 @@
   </head>
   <body class="font-manrope">
     <header>
-      <nav class="container mx-auto mt-14">
+      <!-- nav bar start here -->
+      <nav class="container mx-auto my-8">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -64,8 +68,8 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-24"
+                >
                 <li><a class="text-btn-bg">Home</a></li>
                 <li>
                   <a>Pages</a>
@@ -98,18 +102,66 @@
               </li>
               <li>
                 <a>Blog</a>
-            </li>
+              </li>
               <li>
                 <a>Contact</a>
-            </li>
+              </li>
             </ul>
           </div>
           <div class="navbar-end">
-            <i class="fa-solid fa-magnifying-glass text-[#89898B] mr-4"></i>
-            <button class="bg-btn-bg text-white px-6 py-3 hover:bg-opacity-85 duration-700 rounded-lg">Get Ticket</button>
+            <i class="fa-solid fa-magnifying-glass text-[#89898B] mr-4 hidden lg:flex"></i>
+            <button
+              class="bg-btn-bg text-white px-6 py-3 hover:bg-opacity-85 duration-700 rounded-lg"
+            >
+              Get Ticket
+            </button>
           </div>
         </div>
       </nav>
+      <!-- nav bar end here -->
+
+      <!-- banner sections start here -->
+      <section class="container mx-auto my-8">
+        <div class="relative mx-5 lg:mx-auto lg:z-0">
+            <div class="lg:flex flex-col hidden lg:end-5 lg:bottom-5 lg:absolute lg:z-10 py-3 lg:py-7 px-5 lg:px-10  bg-black text-white rounded-lg">
+                <h1 class="text-xl font-extrabold ">Meet all the heroes from the field</h1>
+                <p class="text-[#89898B] text-sm font-semibold">In the month of July 2023, FIH hosted the third iteration of the World Hockey Camps</p>
+            </div>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img
+                    src="./Images/1.png"
+                    class="w-full"
+                  />
+                  <div
+                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                  >
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img
+                    src="./Images/1.png"
+                    class="w-full"
+                  />
+                  <div
+                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                  >
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+            </div>
+              <div class=" mt-3">
+                <div class=" lg:hidden py-5 px-5 bg-black text-white rounded-lg">
+                    <h1 class="text-xl font-extrabold ">Meet all the heroes from the field</h1>
+                    <p class="text-[#89898B] text-sm font-semibold">In the month of July 2023, FIH hosted the third iteration of the World Hockey Camps</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- banner sections end here -->
     </header>
     <main></main>
     <footer></footer>
