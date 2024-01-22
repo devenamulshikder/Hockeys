@@ -6,6 +6,20 @@
     <title>Hockeys</title>
     <!-- tailwind css link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom color-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "all-heading": "#131318",
+              "btn-bg": "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
       rel="stylesheet"
@@ -18,21 +32,86 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        .font-manrope{
-            font-family: 'Manrope';
-        }
+      .font-manrope {
+        font-family: "Manrope";
+      }
     </style>
   </head>
   <body class="font-manrope">
     <header>
-        <nav class="container mx-auto">
-
-        </nav>
+      <nav class="container mx-auto mt-14">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a class="text-btn-bg">Home</a></li>
+                <li>
+                  <a>Pages</a>
+                </li>
+                <li>
+                  <a>Pages</a>
+                </li>
+                <li>
+                  <a>Blog</a>
+                </li>
+                <li>
+                  <a>Contact</a>
+                </li>
+              </ul>
+            </div>
+            <h1 class="text-4xl font-extrabold text-all-heading">
+              Hockey<span class="text-[#FF4240]">’</span>s
+            </h1>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a class="text-btn-bg">Home</a>
+              </li>
+              <li>
+                <a href="">About</a>
+              </li>
+              <li>
+                <a>Pages</a>
+              </li>
+              <li>
+                <a>Blog</a>
+            </li>
+              <li>
+                <a>Contact</a>
+            </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <i class="fa-solid fa-magnifying-glass text-[#89898B] mr-4"></i>
+            <button class="bg-btn-bg text-white px-6 py-3 hover:bg-opacity-85 duration-700 rounded-lg">Get Ticket</button>
+          </div>
+        </div>
+      </nav>
     </header>
     <main></main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
